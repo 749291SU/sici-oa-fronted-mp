@@ -26,9 +26,12 @@ service.interceptors.request.use(config => {
 // http response 拦截器
 service.interceptors.response.use(response => {
     if (response.data.code == 208) {
+      
+
+      
       // debugger
       // 替换# 后台获取不到#后面的参数
-      let url = window.location.href.replace('#', 'guiguoa')
+      let url = window.location.href.replace('#', 'maka')
       window.location = 'http://sicioa.top:8080/admin/wechat/authorize?returnUrl=' + url
     } else {
       if (response.data.code == 200) {

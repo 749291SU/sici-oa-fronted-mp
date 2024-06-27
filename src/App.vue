@@ -53,7 +53,7 @@ export default {
         token = window.localStorage.getItem('token') || '';
         // alert(token)
         if (token == '') {
-          let url = window.location.href.replace('#', 'guiguoa')
+          let url = window.location.href.replace('#', 'maka')
           window.location = 'http://sicioa.top:8080/admin/wechat/authorize?returnUrl=' + url
         }
       }
